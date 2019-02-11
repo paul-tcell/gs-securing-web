@@ -6,14 +6,21 @@
     <groupId>org.springframework</groupId>
     <artifactId>gs-securing-web</artifactId>
     <version>0.1.0</version>
+    <packaging>war</packaging>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.9.RELEASE</version>
+        <version>1.5.8.RELEASE</version>
     </parent>
 
     <dependencies>
+        <dependency>
+            <groupId>com.citrix.netscaler.nitro</groupId>
+            <artifactId>nitro</artifactId>
+            <version>10.1</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
